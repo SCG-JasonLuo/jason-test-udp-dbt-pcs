@@ -1,0 +1,402 @@
+
+
+============================== 2022-05-17 06:42:27.393867 | a0ef478b-a976-4452-bd75-7abd999eda4f ==============================
+06:42:27.393867 [info ] [MainThread]: Running with dbt=1.0.4
+06:42:27.394221 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/Users/jluo/.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, defer=None, state=None, cls=<class 'dbt.task.deps.DepsTask'>, which='deps', rpc_method='deps')
+06:42:27.394393 [debug] [MainThread]: Tracking: tracking
+06:42:27.410916 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10833ad30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10833ad90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10839b340>]}
+06:42:27.413741 [debug] [MainThread]: Set downloads directory='/var/folders/32/z8c4hvq164z5c_99sjd0mymc0000gr/T/dbt-downloads-4ggcuq31'
+06:42:27.414607 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/index.json
+06:42:27.486062 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/index.json 200
+06:42:27.486656 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json
+06:42:27.523807 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json 200
+06:42:27.535392 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_date/0.5.7.json
+06:42:27.576066 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_date/0.5.7.json 200
+06:42:27.576973 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+06:42:27.611813 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+06:42:27.642497 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils/0.8.4.json
+06:42:27.674486 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils/0.8.4.json 200
+06:42:27.675017 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json
+06:42:27.710422 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json 200
+06:42:27.721480 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+06:42:27.753532 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+06:42:27.783899 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_date/0.5.7.json
+06:42:27.818999 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_date/0.5.7.json 200
+06:42:27.819568 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils/0.8.4.json
+06:42:27.859212 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils/0.8.4.json 200
+06:42:27.859903 [info ] [MainThread]: Installing calogica/dbt_date
+06:42:28.128425 [info ] [MainThread]:   Installed from version 0.5.7
+06:42:28.128884 [info ] [MainThread]:   Up to date!
+06:42:28.129287 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'a0ef478b-a976-4452-bd75-7abd999eda4f', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10842c7f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10842ce50>]}
+06:42:28.129631 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+06:42:28.479149 [info ] [MainThread]:   Installed from version 0.8.4
+06:42:28.479498 [info ] [MainThread]:   Up to date!
+06:42:28.479780 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'a0ef478b-a976-4452-bd75-7abd999eda4f', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10842ca90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108431b80>]}
+06:42:28.480685 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10841fcd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1084384f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1084383d0>]}
+
+
+============================== 2022-05-17 06:55:09.963836 | 1ccfe63e-85e6-4d2c-8ec5-31590a319e4e ==============================
+06:55:09.963836 [info ] [MainThread]: Running with dbt=1.0.4
+06:55:09.964146 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/Users/jluo/.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, defer=None, state=None, cls=<class 'dbt.task.deps.DepsTask'>, which='deps', rpc_method='deps')
+06:55:09.964295 [debug] [MainThread]: Tracking: tracking
+06:55:09.976523 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10da09dc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10da6c310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10da6c3a0>]}
+06:55:09.979807 [debug] [MainThread]: Set downloads directory='/var/folders/32/z8c4hvq164z5c_99sjd0mymc0000gr/T/dbt-downloads-_p8hjhwe'
+06:55:09.980787 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/index.json
+06:55:10.056835 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/index.json 200
+06:55:10.057681 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json
+06:55:10.093517 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json 200
+06:55:10.105255 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_date/0.5.7.json
+06:55:10.141419 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_date/0.5.7.json 200
+06:55:10.142332 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+06:55:10.177144 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+06:55:10.206985 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils/0.8.4.json
+06:55:10.240701 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils/0.8.4.json 200
+06:55:10.241360 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json
+06:55:10.306612 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json 200
+06:55:10.318100 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+06:55:10.353936 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+06:55:10.384111 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_date/0.5.7.json
+06:55:10.427356 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_date/0.5.7.json 200
+06:55:10.427792 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils/0.8.4.json
+06:55:10.463091 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils/0.8.4.json 200
+06:55:10.463627 [info ] [MainThread]: Installing calogica/dbt_date
+06:55:11.331260 [info ] [MainThread]:   Installed from version 0.5.7
+06:55:11.331670 [info ] [MainThread]:   Up to date!
+06:55:11.332135 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '1ccfe63e-85e6-4d2c-8ec5-31590a319e4e', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dafadc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dafad00>]}
+06:55:11.332445 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+06:55:11.871586 [info ] [MainThread]:   Installed from version 0.8.4
+06:55:11.871991 [info ] [MainThread]:   Up to date!
+06:55:11.872336 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '1ccfe63e-85e6-4d2c-8ec5-31590a319e4e', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dafa670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10daffa90>]}
+06:55:11.873466 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10daedd30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10db07580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10db072b0>]}
+
+
+============================== 2022-05-17 07:02:30.221961 | df2bdd8d-7eeb-4488-8f85-fecaba915b04 ==============================
+07:02:30.221961 [info ] [MainThread]: Running with dbt=1.0.4
+07:02:30.222323 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/Users/jluo/.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, project_name=None, skip_profile_setup=False, defer=None, state=None, cls=<class 'dbt.task.init.InitTask'>, which='init', rpc_method=None)
+07:02:30.222499 [debug] [MainThread]: Tracking: tracking
+07:02:30.236334 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112673ac0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112673910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112673b80>]}
+07:02:30.238262 [info ] [MainThread]: Creating dbt configuration folder at /Users/jluo/.dbt
+07:02:30.238981 [info ] [MainThread]: Setting up your profile.
+07:12:25.805620 [info ] [MainThread]: Profile default written to /Users/jluo/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+07:12:25.806261 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1138c8460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112635af0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112635c40>]}
+
+
+============================== 2022-05-17 07:12:44.441376 | cb041acd-7899-47d1-aebc-16b03a04db01 ==============================
+07:12:44.441376 [info ] [MainThread]: Running with dbt=1.0.4
+07:12:44.442232 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/Users/jluo/.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, parse_only=False, threads=None, select=['anon_tcs_doors'], exclude=None, selector_name=None, state=None, full_refresh=False, defer=None, cls=<class 'dbt.task.compile.CompileTask'>, which='compile', rpc_method='compile')
+07:12:44.442524 [debug] [MainThread]: Tracking: tracking
+07:12:44.456817 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d45f940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d45f1f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d45f9a0>]}
+07:12:44.498553 [info ] [MainThread]: Partial parse save file not found. Starting full parse.
+07:12:44.498905 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'cb041acd-7899-47d1-aebc-16b03a04db01', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d464940>]}
+07:12:44.577281 [debug] [MainThread]: Parsing macros/get_standard_etl_columns.sql
+07:12:44.579778 [debug] [MainThread]: Parsing macros/get_batch_id.sql
+07:12:44.581357 [debug] [MainThread]: Parsing macros/get_day_zero_table.sql
+07:12:44.584655 [debug] [MainThread]: Parsing macros/declarations.sql
+07:12:44.586498 [debug] [MainThread]: Parsing macros/base_function_overrides/get_merge_sql.sql
+07:12:44.600939 [debug] [MainThread]: Parsing macros/base_function_overrides/insert_overwrite.sql
+07:12:44.608638 [debug] [MainThread]: Parsing macros/base_function_overrides/generate_schema_name.sql
+07:12:44.609566 [debug] [MainThread]: Parsing macros/etc.sql
+07:12:44.611267 [debug] [MainThread]: Parsing macros/catalog.sql
+07:12:44.616851 [debug] [MainThread]: Parsing macros/adapters.sql
+07:12:44.638203 [debug] [MainThread]: Parsing macros/materializations/seed.sql
+07:12:44.640601 [debug] [MainThread]: Parsing macros/materializations/view.sql
+07:12:44.643010 [debug] [MainThread]: Parsing macros/materializations/table.sql
+07:12:44.646799 [debug] [MainThread]: Parsing macros/materializations/copy.sql
+07:12:44.649214 [debug] [MainThread]: Parsing macros/materializations/incremental.sql
+07:12:44.663627 [debug] [MainThread]: Parsing macros/materializations/snapshot.sql
+07:12:44.665269 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+07:12:44.669001 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+07:12:44.671208 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+07:12:44.672805 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+07:12:44.688921 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+07:12:44.699565 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+07:12:44.710817 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+07:12:44.715053 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+07:12:44.716676 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+07:12:44.718323 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+07:12:44.722439 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+07:12:44.733058 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+07:12:44.734470 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+07:12:44.744404 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+07:12:44.759816 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+07:12:44.767223 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+07:12:44.769944 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+07:12:44.777104 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+07:12:44.778383 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+07:12:44.780929 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+07:12:44.783106 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+07:12:44.789063 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+07:12:44.805518 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+07:12:44.807023 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+07:12:44.809487 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+07:12:44.811042 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+07:12:44.811875 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+07:12:44.812398 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+07:12:44.813053 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+07:12:44.814337 [debug] [MainThread]: Parsing macros/etc/statement.sql
+07:12:44.818686 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+07:12:44.827015 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+07:12:44.829115 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+07:12:44.831664 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+07:12:44.841259 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+07:12:44.844249 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+07:12:44.848737 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+07:12:44.856088 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+07:12:44.865805 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+07:12:44.868769 [debug] [MainThread]: Parsing macros/cross_db_utils/except.sql
+07:12:44.869814 [debug] [MainThread]: Parsing macros/cross_db_utils/replace.sql
+07:12:44.871033 [debug] [MainThread]: Parsing macros/cross_db_utils/concat.sql
+07:12:44.872148 [debug] [MainThread]: Parsing macros/cross_db_utils/datatypes.sql
+07:12:44.878043 [debug] [MainThread]: Parsing macros/cross_db_utils/_is_relation.sql
+07:12:44.879139 [debug] [MainThread]: Parsing macros/cross_db_utils/length.sql
+07:12:44.880399 [debug] [MainThread]: Parsing macros/cross_db_utils/dateadd.sql
+07:12:44.883166 [debug] [MainThread]: Parsing macros/cross_db_utils/intersect.sql
+07:12:44.884205 [debug] [MainThread]: Parsing macros/cross_db_utils/escape_single_quotes.sql
+07:12:44.886025 [debug] [MainThread]: Parsing macros/cross_db_utils/right.sql
+07:12:44.888392 [debug] [MainThread]: Parsing macros/cross_db_utils/listagg.sql
+07:12:44.897096 [debug] [MainThread]: Parsing macros/cross_db_utils/datediff.sql
+07:12:44.907069 [debug] [MainThread]: Parsing macros/cross_db_utils/safe_cast.sql
+07:12:44.909007 [debug] [MainThread]: Parsing macros/cross_db_utils/hash.sql
+07:12:44.910413 [debug] [MainThread]: Parsing macros/cross_db_utils/cast_bool_to_text.sql
+07:12:44.911823 [debug] [MainThread]: Parsing macros/cross_db_utils/identifier.sql
+07:12:44.913425 [debug] [MainThread]: Parsing macros/cross_db_utils/any_value.sql
+07:12:44.914677 [debug] [MainThread]: Parsing macros/cross_db_utils/position.sql
+07:12:44.916154 [debug] [MainThread]: Parsing macros/cross_db_utils/literal.sql
+07:12:44.917200 [debug] [MainThread]: Parsing macros/cross_db_utils/current_timestamp.sql
+07:12:44.920533 [debug] [MainThread]: Parsing macros/cross_db_utils/width_bucket.sql
+07:12:44.925658 [debug] [MainThread]: Parsing macros/cross_db_utils/bool_or.sql
+07:12:44.927237 [debug] [MainThread]: Parsing macros/cross_db_utils/last_day.sql
+07:12:44.930797 [debug] [MainThread]: Parsing macros/cross_db_utils/split_part.sql
+07:12:44.932585 [debug] [MainThread]: Parsing macros/cross_db_utils/date_trunc.sql
+07:12:44.934058 [debug] [MainThread]: Parsing macros/cross_db_utils/_is_ephemeral.sql
+07:12:44.935995 [debug] [MainThread]: Parsing macros/materializations/insert_by_period_materialization.sql
+07:12:44.961233 [debug] [MainThread]: Parsing macros/web/get_url_host.sql
+07:12:44.963239 [debug] [MainThread]: Parsing macros/web/get_url_path.sql
+07:12:44.965794 [debug] [MainThread]: Parsing macros/web/get_url_parameter.sql
+07:12:44.967343 [debug] [MainThread]: Parsing macros/generic_tests/fewer_rows_than.sql
+07:12:44.969007 [debug] [MainThread]: Parsing macros/generic_tests/equal_rowcount.sql
+07:12:44.970616 [debug] [MainThread]: Parsing macros/generic_tests/relationships_where.sql
+07:12:44.972748 [debug] [MainThread]: Parsing macros/generic_tests/recency.sql
+07:12:44.974446 [debug] [MainThread]: Parsing macros/generic_tests/not_constant.sql
+07:12:44.975660 [debug] [MainThread]: Parsing macros/generic_tests/accepted_range.sql
+07:12:44.978174 [debug] [MainThread]: Parsing macros/generic_tests/not_accepted_values.sql
+07:12:44.980256 [debug] [MainThread]: Parsing macros/generic_tests/test_unique_where.sql
+07:12:44.981641 [debug] [MainThread]: Parsing macros/generic_tests/at_least_one.sql
+07:12:44.982865 [debug] [MainThread]: Parsing macros/generic_tests/unique_combination_of_columns.sql
+07:12:44.985620 [debug] [MainThread]: Parsing macros/generic_tests/cardinality_equality.sql
+07:12:44.987571 [debug] [MainThread]: Parsing macros/generic_tests/expression_is_true.sql
+07:12:44.989335 [debug] [MainThread]: Parsing macros/generic_tests/not_null_proportion.sql
+07:12:44.991472 [debug] [MainThread]: Parsing macros/generic_tests/sequential_values.sql
+07:12:44.994489 [debug] [MainThread]: Parsing macros/generic_tests/test_not_null_where.sql
+07:12:44.995921 [debug] [MainThread]: Parsing macros/generic_tests/equality.sql
+07:12:45.000821 [debug] [MainThread]: Parsing macros/generic_tests/mutually_exclusive_ranges.sql
+07:12:45.010538 [debug] [MainThread]: Parsing macros/jinja_helpers/pretty_log_format.sql
+07:12:45.011779 [debug] [MainThread]: Parsing macros/jinja_helpers/pretty_time.sql
+07:12:45.012969 [debug] [MainThread]: Parsing macros/jinja_helpers/log_info.sql
+07:12:45.014029 [debug] [MainThread]: Parsing macros/jinja_helpers/slugify.sql
+07:12:45.015151 [debug] [MainThread]: Parsing macros/sql/date_spine.sql
+07:12:45.019096 [debug] [MainThread]: Parsing macros/sql/nullcheck_table.sql
+07:12:45.020758 [debug] [MainThread]: Parsing macros/sql/get_relations_by_pattern.sql
+07:12:45.023979 [debug] [MainThread]: Parsing macros/sql/generate_series.sql
+07:12:45.027997 [debug] [MainThread]: Parsing macros/sql/get_relations_by_prefix.sql
+07:12:45.031193 [debug] [MainThread]: Parsing macros/sql/get_tables_by_prefix_sql.sql
+07:12:45.032769 [debug] [MainThread]: Parsing macros/sql/star.sql
+07:12:45.035841 [debug] [MainThread]: Parsing macros/sql/unpivot.sql
+07:12:45.043408 [debug] [MainThread]: Parsing macros/sql/union.sql
+07:12:45.053405 [debug] [MainThread]: Parsing macros/sql/groupby.sql
+07:12:45.054716 [debug] [MainThread]: Parsing macros/sql/deduplicate.sql
+07:12:45.057841 [debug] [MainThread]: Parsing macros/sql/surrogate_key.sql
+07:12:45.061091 [debug] [MainThread]: Parsing macros/sql/safe_add.sql
+07:12:45.062654 [debug] [MainThread]: Parsing macros/sql/nullcheck.sql
+07:12:45.064199 [debug] [MainThread]: Parsing macros/sql/get_tables_by_pattern_sql.sql
+07:12:45.070528 [debug] [MainThread]: Parsing macros/sql/get_column_values.sql
+07:12:45.075508 [debug] [MainThread]: Parsing macros/sql/pivot.sql
+07:12:45.079476 [debug] [MainThread]: Parsing macros/sql/get_filtered_columns_in_relation.sql
+07:12:45.082077 [debug] [MainThread]: Parsing macros/sql/get_query_results_as_dict.sql
+07:12:45.084297 [debug] [MainThread]: Parsing macros/sql/get_table_types_sql.sql
+07:12:45.085867 [debug] [MainThread]: Parsing macros/sql/haversine_distance.sql
+07:12:45.092837 [debug] [MainThread]: Parsing macros/get_date_dimension.sql
+07:12:45.116268 [debug] [MainThread]: Parsing macros/get_base_dates.sql
+07:12:45.121418 [debug] [MainThread]: Parsing macros/fiscal_date/get_fiscal_year_dates.sql
+07:12:45.125467 [debug] [MainThread]: Parsing macros/fiscal_date/get_fiscal_periods.sql
+07:12:45.127182 [debug] [MainThread]: Parsing macros/calendar_date/tomorrow.sql
+07:12:45.127791 [debug] [MainThread]: Parsing macros/calendar_date/next_week.sql
+07:12:45.128318 [debug] [MainThread]: Parsing macros/calendar_date/next_month_name.sql
+07:12:45.128991 [debug] [MainThread]: Parsing macros/calendar_date/next_month.sql
+07:12:45.129519 [debug] [MainThread]: Parsing macros/calendar_date/day_name.sql
+07:12:45.132539 [debug] [MainThread]: Parsing macros/calendar_date/to_unixtimestamp.sql
+07:12:45.134135 [debug] [MainThread]: Parsing macros/calendar_date/n_days_away.sql
+07:12:45.134903 [debug] [MainThread]: Parsing macros/calendar_date/week_start.sql
+07:12:45.137550 [debug] [MainThread]: Parsing macros/calendar_date/iso_week_start.sql
+07:12:45.139919 [debug] [MainThread]: Parsing macros/calendar_date/n_days_ago.sql
+07:12:45.140921 [debug] [MainThread]: Parsing macros/calendar_date/last_week.sql
+07:12:45.141475 [debug] [MainThread]: Parsing macros/calendar_date/now.sql
+07:12:45.142050 [debug] [MainThread]: Parsing macros/calendar_date/periods_since.sql
+07:12:45.142738 [debug] [MainThread]: Parsing macros/calendar_date/today.sql
+07:12:45.143257 [debug] [MainThread]: Parsing macros/calendar_date/last_month.sql
+07:12:45.143788 [debug] [MainThread]: Parsing macros/calendar_date/day_of_year.sql
+07:12:45.145571 [debug] [MainThread]: Parsing macros/calendar_date/from_unixtimestamp.sql
+07:12:45.150844 [debug] [MainThread]: Parsing macros/calendar_date/n_months_ago.sql
+07:12:45.151760 [debug] [MainThread]: Parsing macros/calendar_date/date_part.sql
+07:12:45.153083 [debug] [MainThread]: Parsing macros/calendar_date/n_weeks_away.sql
+07:12:45.153949 [debug] [MainThread]: Parsing macros/calendar_date/day_of_month.sql
+07:12:45.154961 [debug] [MainThread]: Parsing macros/calendar_date/yesterday.sql
+07:12:45.155569 [debug] [MainThread]: Parsing macros/calendar_date/day_of_week.sql
+07:12:45.162759 [debug] [MainThread]: Parsing macros/calendar_date/iso_week_end.sql
+07:12:45.164866 [debug] [MainThread]: Parsing macros/calendar_date/n_weeks_ago.sql
+07:12:45.165759 [debug] [MainThread]: Parsing macros/calendar_date/month_name.sql
+07:12:45.168610 [debug] [MainThread]: Parsing macros/calendar_date/last_month_name.sql
+07:12:45.169314 [debug] [MainThread]: Parsing macros/calendar_date/week_of_year.sql
+07:12:45.171026 [debug] [MainThread]: Parsing macros/calendar_date/convert_timezone.sql
+07:12:45.175922 [debug] [MainThread]: Parsing macros/calendar_date/n_months_away.sql
+07:12:45.176816 [debug] [MainThread]: Parsing macros/calendar_date/iso_week_of_year.sql
+07:12:45.179342 [debug] [MainThread]: Parsing macros/calendar_date/week_end.sql
+07:12:45.181559 [debug] [MainThread]: Parsing macros/calendar_date/next_month_number.sql
+07:12:45.182182 [debug] [MainThread]: Parsing macros/calendar_date/last_month_number.sql
+07:12:45.605191 [debug] [MainThread]: 1603: static parser failed on anon/anon_tcs_doors.sql
+07:12:45.641990 [debug] [MainThread]: 1602: parser fallback to jinja rendering on anon/anon_tcs_doors.sql
+07:12:45.644705 [debug] [MainThread]: 1603: static parser failed on anon/anon_cw_sensors.sql
+07:12:45.653455 [debug] [MainThread]: 1602: parser fallback to jinja rendering on anon/anon_cw_sensors.sql
+07:12:45.654759 [debug] [MainThread]: 1603: static parser failed on anon/anon_vc_event.sql
+07:12:45.675286 [debug] [MainThread]: 1602: parser fallback to jinja rendering on anon/anon_vc_event.sql
+07:12:45.676405 [debug] [MainThread]: 1603: static parser failed on anon/anon_tcs_counts.sql
+07:12:45.734710 [debug] [MainThread]: 1602: parser fallback to jinja rendering on anon/anon_tcs_counts.sql
+07:12:45.736145 [debug] [MainThread]: 1603: static parser failed on anon/anon_vc_relationship.sql
+07:12:45.745110 [debug] [MainThread]: 1602: parser fallback to jinja rendering on anon/anon_vc_relationship.sql
+07:12:45.746544 [debug] [MainThread]: 1603: static parser failed on anon/anon_cw_counts.sql
+07:12:45.763162 [debug] [MainThread]: 1602: parser fallback to jinja rendering on anon/anon_cw_counts.sql
+07:12:45.764536 [debug] [MainThread]: 1603: static parser failed on anon/anon_vc_entity.sql
+07:12:45.775127 [debug] [MainThread]: 1602: parser fallback to jinja rendering on anon/anon_vc_entity.sql
+07:12:45.776868 [debug] [MainThread]: 1603: static parser failed on fact/fact_cw_counts_sensors.sql
+07:12:45.784567 [debug] [MainThread]: 1602: parser fallback to jinja rendering on fact/fact_cw_counts_sensors.sql
+07:12:45.785770 [debug] [MainThread]: 1603: static parser failed on fact/fact_vc_event_hourly.sql
+07:12:45.792877 [debug] [MainThread]: 1602: parser fallback to jinja rendering on fact/fact_vc_event_hourly.sql
+07:12:45.794161 [debug] [MainThread]: 1603: static parser failed on fact/fact_vc_comparison.sql
+07:12:45.800356 [debug] [MainThread]: 1602: parser fallback to jinja rendering on fact/fact_vc_comparison.sql
+07:12:45.801612 [debug] [MainThread]: 1603: static parser failed on fact/fact_tcs_counts_doors.sql
+07:12:45.807832 [debug] [MainThread]: 1602: parser fallback to jinja rendering on fact/fact_tcs_counts_doors.sql
+07:12:45.809714 [debug] [MainThread]: 1603: static parser failed on fact/fact_vc_event_entity.sql
+07:12:45.816500 [debug] [MainThread]: 1602: parser fallback to jinja rendering on fact/fact_vc_event_entity.sql
+07:12:45.817649 [debug] [MainThread]: 1603: static parser failed on fact/fact_tcs_counts_hourly.sql
+07:12:45.822929 [debug] [MainThread]: 1602: parser fallback to jinja rendering on fact/fact_tcs_counts_hourly.sql
+07:12:45.824072 [debug] [MainThread]: 1603: static parser failed on fact/fact_cw_counts_hourly.sql
+07:12:45.829384 [debug] [MainThread]: 1602: parser fallback to jinja rendering on fact/fact_cw_counts_hourly.sql
+07:12:45.830565 [debug] [MainThread]: 1603: static parser failed on dimensions/dim1_vc_relationship.sql
+07:12:45.839933 [debug] [MainThread]: 1602: parser fallback to jinja rendering on dimensions/dim1_vc_relationship.sql
+07:12:45.841197 [debug] [MainThread]: 1603: static parser failed on dimensions/dim1_cw_sensors.sql
+07:12:45.849611 [debug] [MainThread]: 1602: parser fallback to jinja rendering on dimensions/dim1_cw_sensors.sql
+07:12:45.850830 [debug] [MainThread]: 1603: static parser failed on dimensions/dim1_tcs_doors.sql
+07:12:45.859454 [debug] [MainThread]: 1602: parser fallback to jinja rendering on dimensions/dim1_tcs_doors.sql
+07:12:45.860645 [debug] [MainThread]: 1603: static parser failed on dimensions/dim1_vc_entity.sql
+07:12:45.868660 [debug] [MainThread]: 1602: parser fallback to jinja rendering on dimensions/dim1_vc_entity.sql
+07:12:45.977625 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cb041acd-7899-47d1-aebc-16b03a04db01', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10df090d0>]}
+07:12:45.993569 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cb041acd-7899-47d1-aebc-16b03a04db01', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d464e80>]}
+07:12:45.993990 [info ] [MainThread]: Found 18 models, 1 test, 0 snapshots, 0 analyses, 504 macros, 0 operations, 0 seed files, 10 sources, 0 exposures, 0 metrics
+07:12:45.995543 [info ] [MainThread]: 
+07:12:45.996070 [debug] [MainThread]: Acquiring new bigquery connection "master"
+07:12:45.997713 [debug] [ThreadPool]: Acquiring new bigquery connection "list_scg-udp-dw-dev_PCS"
+07:12:45.998064 [debug] [ThreadPool]: Opening a new connection, currently in state init
+07:12:45.998465 [debug] [ThreadPool]: Acquiring new bigquery connection "list_scg-udp-anon-dev_PCS"
+07:12:45.999213 [debug] [ThreadPool]: Opening a new connection, currently in state init
+07:12:52.008518 [debug] [ThreadPool]: BigQuery adapter: Got an error when attempting to create a bigquery client: 'Runtime Error
+  
+  dbt encountered an error while trying to read your profiles.yml file.
+  
+  Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+  '
+07:12:52.008809 [debug] [ThreadPool]: BigQuery adapter: Got an error when attempting to create a bigquery client: 'Runtime Error
+  
+  dbt encountered an error while trying to read your profiles.yml file.
+  
+  Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+  '
+07:12:52.009963 [debug] [MainThread]: Connection 'master' was properly closed.
+07:12:52.010153 [debug] [MainThread]: Connection 'list_scg-udp-dw-dev_PCS' was properly closed.
+07:12:52.010304 [debug] [MainThread]: Connection 'list_scg-udp-anon-dev_PCS' was properly closed.
+07:12:52.011328 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10df11df0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10df11ee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10df118e0>]}
+
+
+============================== 2022-05-25 05:35:00.747043 | 9e1c3aee-1668-4a2c-bb0b-8a65f697069f ==============================
+05:35:00.747043 [info ] [MainThread]: Running with dbt=1.0.4
+05:35:00.748004 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/Users/jluo/.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, parse_only=False, threads=None, select=['anon_tcs_counts'], exclude=None, selector_name=None, state=None, full_refresh=False, defer=None, cls=<class 'dbt.task.compile.CompileTask'>, which='compile', rpc_method='compile')
+05:35:00.748248 [debug] [MainThread]: Tracking: tracking
+05:35:00.766906 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b57850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b57730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b57700>]}
+05:35:00.914854 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+05:35:00.915087 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+05:35:00.922660 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9e1c3aee-1668-4a2c-bb0b-8a65f697069f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104dc20d0>]}
+05:35:00.948160 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9e1c3aee-1668-4a2c-bb0b-8a65f697069f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104cab310>]}
+05:35:00.948491 [info ] [MainThread]: Found 18 models, 1 test, 0 snapshots, 0 analyses, 504 macros, 0 operations, 0 seed files, 10 sources, 0 exposures, 0 metrics
+05:35:00.950218 [info ] [MainThread]: 
+05:35:00.950696 [debug] [MainThread]: Acquiring new bigquery connection "master"
+05:35:00.952223 [debug] [ThreadPool]: Acquiring new bigquery connection "list_scg-udp-dw-dev_PCS"
+05:35:00.952691 [debug] [ThreadPool]: Acquiring new bigquery connection "list_scg-udp-anon-dev_PCS"
+05:35:00.953123 [debug] [ThreadPool]: Opening a new connection, currently in state init
+05:35:00.953346 [debug] [ThreadPool]: Opening a new connection, currently in state init
+05:35:06.962288 [debug] [ThreadPool]: BigQuery adapter: Got an error when attempting to create a bigquery client: 'Runtime Error
+  
+  dbt encountered an error while trying to read your profiles.yml file.
+  
+  Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+  '
+05:35:06.962586 [debug] [ThreadPool]: BigQuery adapter: Got an error when attempting to create a bigquery client: 'Runtime Error
+  
+  dbt encountered an error while trying to read your profiles.yml file.
+  
+  Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+  '
+05:35:06.963763 [debug] [MainThread]: Connection 'master' was properly closed.
+05:35:06.963962 [debug] [MainThread]: Connection 'list_scg-udp-dw-dev_PCS' was properly closed.
+05:35:06.964103 [debug] [MainThread]: Connection 'list_scg-udp-anon-dev_PCS' was properly closed.
+05:35:06.965278 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104d87850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104d87fa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104d87730>]}
+
+
+============================== 2022-05-25 05:36:43.687505 | 9459bb32-4a6b-40fb-8cc5-1cbe6d67c56e ==============================
+05:36:43.687505 [info ] [MainThread]: Running with dbt=1.0.4
+05:36:43.688174 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/Users/jluo/.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, parse_only=False, threads=None, select=['anon_tcs_counts'], exclude=None, selector_name=None, state=None, full_refresh=False, defer=None, cls=<class 'dbt.task.compile.CompileTask'>, which='compile', rpc_method='compile')
+05:36:43.688436 [debug] [MainThread]: Tracking: tracking
+05:36:43.703360 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110268b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1102688e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110268d00>]}
+05:36:43.863295 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+05:36:43.863557 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+05:36:43.871692 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9459bb32-4a6b-40fb-8cc5-1cbe6d67c56e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11054c0d0>]}
+05:36:43.887877 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9459bb32-4a6b-40fb-8cc5-1cbe6d67c56e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110438700>]}
+05:36:43.888220 [info ] [MainThread]: Found 18 models, 1 test, 0 snapshots, 0 analyses, 504 macros, 0 operations, 0 seed files, 10 sources, 0 exposures, 0 metrics
+05:36:43.890016 [info ] [MainThread]: 
+05:36:43.890549 [debug] [MainThread]: Acquiring new bigquery connection "master"
+05:36:43.892230 [debug] [ThreadPool]: Acquiring new bigquery connection "list_scg-udp-dw-dev_PCS"
+05:36:43.892689 [debug] [ThreadPool]: Acquiring new bigquery connection "list_scg-udp-anon-dev_PCS"
+05:36:43.893106 [debug] [ThreadPool]: Opening a new connection, currently in state init
+05:36:43.893328 [debug] [ThreadPool]: Opening a new connection, currently in state init
+05:36:45.140168 [info ] [MainThread]: Concurrency: 5 threads (target='dev')
+05:36:45.140836 [info ] [MainThread]: 
+05:36:45.164805 [debug] [Thread-1  ]: Began running node model.people_counting_project.anon_tcs_counts
+05:36:45.165436 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.people_counting_project.anon_tcs_counts"
+05:36:45.165744 [debug] [Thread-1  ]: Began compiling node model.people_counting_project.anon_tcs_counts
+05:36:45.166046 [debug] [Thread-1  ]: Compiling model.people_counting_project.anon_tcs_counts
+05:36:45.213417 [debug] [Thread-1  ]: Writing injected SQL for node "model.people_counting_project.anon_tcs_counts"
+05:36:45.214252 [debug] [Thread-1  ]: finished collecting timing info
+05:36:45.214455 [debug] [Thread-1  ]: Began executing node model.people_counting_project.anon_tcs_counts
+05:36:45.214640 [debug] [Thread-1  ]: finished collecting timing info
+05:36:45.214994 [debug] [Thread-1  ]: Finished running node model.people_counting_project.anon_tcs_counts
+05:36:45.215544 [debug] [Thread-3  ]: Began running node test.people_counting_project.unique_anon_tcs_counts_TCSCounts_SK.2bdc67904f
+05:36:45.215964 [debug] [Thread-3  ]: Acquiring new bigquery connection "test.people_counting_project.unique_anon_tcs_counts_TCSCounts_SK.2bdc67904f"
+05:36:45.216133 [debug] [Thread-3  ]: Began compiling node test.people_counting_project.unique_anon_tcs_counts_TCSCounts_SK.2bdc67904f
+05:36:45.216284 [debug] [Thread-3  ]: Compiling test.people_counting_project.unique_anon_tcs_counts_TCSCounts_SK.2bdc67904f
+05:36:45.228673 [debug] [Thread-3  ]: Writing injected SQL for node "test.people_counting_project.unique_anon_tcs_counts_TCSCounts_SK.2bdc67904f"
+05:36:45.229209 [debug] [Thread-3  ]: finished collecting timing info
+05:36:45.229374 [debug] [Thread-3  ]: Began executing node test.people_counting_project.unique_anon_tcs_counts_TCSCounts_SK.2bdc67904f
+05:36:45.229530 [debug] [Thread-3  ]: finished collecting timing info
+05:36:45.229848 [debug] [Thread-3  ]: Finished running node test.people_counting_project.unique_anon_tcs_counts_TCSCounts_SK.2bdc67904f
+05:36:45.230917 [debug] [MainThread]: Connection 'master' was properly closed.
+05:36:45.231085 [debug] [MainThread]: Connection 'model.people_counting_project.anon_tcs_counts' was properly closed.
+05:36:45.231219 [debug] [MainThread]: Connection 'list_scg-udp-anon-dev_PCS' was properly closed.
+05:36:45.231345 [debug] [MainThread]: Connection 'test.people_counting_project.unique_anon_tcs_counts_TCSCounts_SK.2bdc67904f' was properly closed.
+05:36:45.243524 [info ] [MainThread]: Done.
+05:36:45.243957 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1105cf130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1105cf340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1105cf1f0>]}
+
+
+============================== 2022-05-25 06:03:47.614375 | 386c5301-c60e-4d66-b4b6-506aede35fad ==============================
+06:03:47.614375 [info ] [MainThread]: Running with dbt=1.0.4
+06:03:47.614704 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/Users/jluo/.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, project_name=None, skip_profile_setup=False, defer=None, state=None, cls=<class 'dbt.task.init.InitTask'>, which='init', rpc_method=None)
+06:03:47.614872 [debug] [MainThread]: Tracking: tracking
+06:03:47.630490 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f6176a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f5fc250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f5fc310>]}
+06:03:47.632237 [info ] [MainThread]: Setting up your profile.

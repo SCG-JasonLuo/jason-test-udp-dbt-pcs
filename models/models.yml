@@ -1,0 +1,43 @@
+version: 2
+
+models:
+  - name: anon_tcs_counts
+    description: Raw traffic counts from Oracle DWH between 20211101 and 20211120.
+    columns:
+      - name: TCSCounts_SK
+        description: MD5 hash of concatenated values of count date, time, door, and tag. 
+        tests: 
+          - unique
+      - name: DB_TAG
+        description: KOT
+      - name: COUNT_DATE
+        description: Date of count
+      - name: COUNT_TIME
+        description: Time of count, usually by hour
+      - name: COUNT_DOOR
+        description: Door number
+      - name: COUNT_VALUE
+        description: Traffic
+      - name: DELETED_YN
+        description: If the record is deleted
+      - name: DSS_UPDATE_TIME
+        description: Update time in Unix time format
+
+  - name: anon_tcs_doors
+
+  - name: anon_cw_counts
+    description: Raw traffice counts from CW system with complete historical data
+
+  - name: anon_cw_sensors
+
+  - name: anon_vc_event
+
+  - name: anon_vc_entity
+
+  - name: anon_vc_relationship
+
+  - name: dim1_tcs_doors
+
+  - name: dim1_cw_sensors
+
+  - name: dim1_vc_entity

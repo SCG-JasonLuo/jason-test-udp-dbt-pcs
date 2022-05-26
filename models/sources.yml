@@ -1,0 +1,61 @@
+version: 2
+
+sources:
+  - name: Lake_PCS
+    description: source tables for the anon layer 
+    project: "{{ 'scg-udp-lake-' + target.name }}"
+    schema: PCS_TEST
+    loader: gcloud storage
+    tables:
+      - name: TCS_Counts
+        external:
+          location: "{{ 'gs://jason-test-scg-udp-lake-pcs-tcs-' + target.name + '/privacy=non-pi/processed=no/source=tcs/tableName=SRC_TCS_COUNTS_AU/*.avro' }}"
+          options:
+            format: avro
+      - name: TCS_Doors
+        external:
+          location: "{{ 'gs://jason-test-scg-udp-lake-pcs-tcs-' + target.name + '/privacy=non-pi/processed=no/source=tcs/tableName=SRC_TCS_DOOR_CFG_AU/*.avro' }}"
+          options:
+            format: avro
+      # keep adding tables here, or start a new block for a new schema 
+      - name: CW_Counts
+        external:
+          location: "{{ 'gs://scg-udp-lake-pcs-countwise-' + target.name + '/countwise/privacy=non-pi/processed=no/source=countwise/tableName=vwcwcount/*.avro' }}"
+          options:
+            format: avro
+      - name: CW_Sensors
+        external:
+          location: "{{ 'gs://scg-udp-lake-pcs-countwise-' + target.name + '/countwise/privacy=non-pi/processed=no/source=countwise/tableName=vwcwdevices/*.avro' }}"
+          options:
+            format: avro
+      - name: VC_Entity
+        external:
+          location: "{{ 'gs://scg-udp-lake-pcs-vc-' + target.name + '/privacy=non-pi/processed=no/source=vc/tableName=entity/*' }}"
+          options:
+            format: NEWLINE_DELIMITED_JSON
+      - name: VC_Event
+        external:
+          location: "{{ 'gs://scg-udp-lake-pcs-vc-' + target.name + '/privacy=non-pi/processed=no/source=vc/tableName=event/*' }}"
+          options:
+            format: NEWLINE_DELIMITED_JSON
+      - name: VC_Relationship
+        external:
+          location: "{{ 'gs://scg-udp-lake-pcs-vc-' + target.name + '/privacy=non-pi/processed=no/source=vc/tableName=relationship/*' }}"
+          options:
+            format: NEWLINE_DELIMITED_JSON
+
+
+  - name: DW_PCS
+    project: "{{ 'scg-udp-dw-' + target.name }}"
+    schema: PCS
+    #loader: gcloud storage
+    tables:
+      - name: Ref_Calendar_Date
+      - name: Camera_Ref_Data
+
+  - name: DW
+    project: "{{ 'scg-udp-dw-' + target.name }}"
+    schema: commonReferenceData
+    #loader: gcloud storage
+    tables:
+      - name: Dim1_Date
